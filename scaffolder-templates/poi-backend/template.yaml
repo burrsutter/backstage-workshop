@@ -62,7 +62,7 @@ spec:
         url: ./skeleton
         targetPath: ./source
         values:
-          git_host: {{ gitlab_host }}
+          git_host: gitlab-gitlab.apps.cluster-rwrbl.sandbox2143.opentlc.com
           gitlabGroup: {{ '${{parameters.gitlabGroup}}' }}
           repoName: {{ '${{parameters.namespace}}' }}-backend
           owner: {{ '${{user.entity.metadata.name}}' }}
