@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: poi-backend-template
-  title: Quarkus Backend Application for Points-of-Interest Map
+  title: Quarkus Backend Application for Points-of-Interest Map 2
   description: Creates the quarkus poi backend app for the workshop
   tags:
     - java
@@ -23,9 +23,9 @@ spec:
           title: Repo Owner
           type: string
           description: GitLab Organization
-          default: {{ gitlab_destination_group }}
+          default: development
           enum:
-            - {{ gitlab_destination_group }}
+            - development
         description:
           title: Description
           type: string
@@ -49,7 +49,7 @@ spec:
           title: Image Host
           type: string
           description: Host for storing image (defaults to openshift internal)
-          default: image-registry.openshift-image-registry.svc:5000
+          default: quay-rwrbl.apps.cluster-rwrbl.sandbox2143.opentlc.com
         image_tag:
           title: Image Tag
           default: latest
